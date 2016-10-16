@@ -31,6 +31,8 @@ export default class HomebuyerSiftView extends SiftView {
   }
 
   presentView(value) {
+    console.log('presentView:', value);
+
     if (value.sizeClass) {
       this._currentSizeClass = value.sizeClass.current;
     }
